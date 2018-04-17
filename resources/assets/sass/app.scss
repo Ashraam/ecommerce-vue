@@ -1,0 +1,44 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Font Awesome
+@import '~font-awesome/scss/font-awesome';
+
+body {
+  height: 100vh !important;
+}
+
+.app {
+  min-height: 100vh;
+  padding-top: 55px;
+
+  .market {
+    height: calc(100vh - 55px);
+    display: grid;
+    grid-template-columns: 1fr 300px;
+
+    aside {
+      position: fixed;
+      height: calc(100vh - 55px);
+      width: 300px;
+      right: 0;
+      top: 55px;
+      padding: 3px;
+      background: #EAEAEA;
+
+      display: grid;
+      grid-template-rows: 1fr 80px;
+
+      .top {
+        overflow: auto;
+      }
+    }
+  }
+}
